@@ -3,67 +3,133 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>刘晋豪 - 个人主页</title>
-<style>
-  :root { --bg:#0f172a; --card:#1e293b; --txt:#e2e8f0; --accent:#38bdf8; }
-  * { box-sizing: border-box; }
-  body { margin:0; font-family: -apple-system, "Microsoft YaHei", sans-serif;
-         background:var(--bg); color:var(--txt); line-height:1.7; }
-  .wrap { max-width: 860px; margin: 0 auto; padding: 48px 20px; }
-  header { text-align:center; margin-bottom: 48px; }
-  .avatar { width:96px; height:96px; border-radius:50%; background:var(--accent);
-            display:inline-block; }
-  h1 { margin: 16px 0 8px; font-size: 32px; }
-  .tagline { color:#94a3b8; }
-  h2 { margin-top: 48px; border-left: 4px solid var(--accent); padding-left: 12px; }
-  .grid { display:grid; grid-template-columns: repeat(auto-fill, minmax(260px,1fr));
-          gap:16px; }
-  .card { background:var(--card); border-radius:12px; padding:20px; }
-  .card h3 { margin:0 0 8px; }
-  .card p { margin:0 0 16px; color:#94a3b8; font-size:14px; }
-  .btn { display:inline-block; background:var(--accent); color:#0f172a;
-         padding:8px 16px; border-radius:8px; text-decoration:none; font-weight:600; }
-  .btn:hover { opacity:.85; }
-  footer { margin-top:64px; text-align:center; color:#64748b; font-size:14px; }
-</style>
+<title>刘晋豪 · 独立开发者</title>
+<meta name="description" content="刘晋豪的个人主页。独立开发者，做简单、可靠、真正有用的桌面软件。当前作品：磁盘空间分析器，一款完全本地运行、删除可还原的 Windows 磁盘清理工具。">
+<meta name="theme-color" content="#07111c">
+<meta property="og:type" content="website">
+<meta property="og:title" content="刘晋豪 · 独立开发者">
+<meta property="og:description" content="把麻烦的小事，做成打开就能用的软件。">
+<meta property="og:url" content="https://huxinxiaoye.github.io/">
+<meta property="og:image" content="https://huxinxiaoye.github.io/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/favicon.png" type="image/png">
+<link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-<div class="wrap">
 
-  <header>
-    <div class="avatar"></div>
-    <h1>刘晋豪</h1>
-    <p class="tagline">独立开发者 · 写点有用的软件</p>
-  </header>
-
-  <h2>我的项目</h2>
-  <div class="grid">
-
-    <div class="card">
-      <h3>MyTool</h3>
-      <p>跨平台小工具，支持 Windows。</p>
-      <a class="btn"
-         href="https://github.com/huxinxiaoye/my-tools/releases/download/v1.0.0/win.zip">
-         下载
-      </a>
-    </div>
-
-    <div class="card">
-      <h3>AnotherApp</h3>
-      <p>安卓端记事本，支持 Markdown。</p>
-      <a class="btn"
-         href="https://github.com/huxinxiaoye/my-tools/releases/download/v1.0.0/AnotherApp.apk">
-         下载
-      </a>
-    </div>
-
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">刘</span>
+      <span>刘晋豪</span>
+    </a>
+    <nav class="nav-links" aria-label="主导航">
+      <a href="#projects">作品</a>
+      <a href="#about">关于</a>
+      <a href="https://github.com/huxinxiaoye" target="_blank" rel="noopener">GitHub ↗</a>
+    </nav>
   </div>
+</header>
 
-  <footer>
-    © 2026 刘晋豪 ·
-    <a href="https://github.com/huxinxiaoye" style="color:#38bdf8">GitHub</a>
-  </footer>
+<main>
+  <section class="hero container">
+    <div class="hero-grid">
+      <div>
+        <p class="eyebrow">独立开发者 · 写点有用的软件</p>
+        <h1>你好，我是<br><span class="accent">刘晋豪</span>。</h1>
+        <p class="lede">
+          我喜欢把生活里那些麻烦的小事，做成打开就能用的软件。
+          不堆功能，不绕弯子，只解决真正让人头疼的问题。
+        </p>
+        <div class="hero-actions">
+          <a class="btn" href="#projects">看看我的作品 <span aria-hidden="true">↓</span></a>
+          <a class="btn secondary" href="https://github.com/huxinxiaoye" target="_blank" rel="noopener">访问 GitHub</a>
+        </div>
+        <p class="hero-note">目前专注于 Windows 桌面工具，全部本地运行。</p>
+      </div>
 
-</div>
+      <div class="hero-art" aria-hidden="true">
+        <img class="app-icon" src="assets/diskcleaner-icon.png" alt="">
+        <span class="floating-tag green"><i class="dot"></i>随便删除</span>
+        <span class="floating-tag yellow"><i class="dot"></i>可选删除</span>
+        <span class="floating-tag red"><i class="dot"></i>不可删除</span>
+      </div>
+    </div>
+
+    <div class="stats" aria-label="项目概况">
+      <div class="stat"><strong>3 级</strong><span>文件安全分级</span></div>
+      <div class="stat"><strong>100%</strong><span>本地运行，不上传数据</span></div>
+      <div class="stat"><strong>回收站</strong><span>默认送入，可还原</span></div>
+      <div class="stat"><strong>免安装</strong><span>解压即用</span></div>
+    </div>
+  </section>
+
+  <section class="section container" id="projects">
+    <div class="section-head">
+      <h2>我的作品</h2>
+      <p>每一个都从自己的真实需求出发。少一点套路，多一点好用。</p>
+    </div>
+
+    <article class="project-feature">
+      <img class="icon" src="assets/diskcleaner-icon.png" alt="磁盘空间分析器图标">
+      <div>
+        <h3>磁盘空间分析器</h3>
+        <p>
+          看清每一 GB 去了哪里。把文件夹、大文件和可清理内容按三色分级，
+          先告诉你为什么能删，再由你决定删不删；删除默认进回收站，误删可还原。
+        </p>
+        <div class="tags">
+          <span class="tag">Windows 10 / 11</span>
+          <span class="tag">磁盘分析</span>
+          <span class="tag">安全清理</span>
+          <span class="tag">软件卸载</span>
+          <span class="tag">便携版</span>
+        </div>
+      </div>
+      <div class="project-actions">
+        <a class="btn" href="diskcleaner.html">查看详情</a>
+        <a class="btn secondary" href="downloads/DiskCleaner_1.0.0_win64_portable.zip" download>直接下载</a>
+      </div>
+    </article>
+
+    <p class="placeholder">更多作品正在整理中。如果你有想解决的小问题，也欢迎来 GitHub 找我聊聊。</p>
+  </section>
+
+  <section class="section container" id="about">
+    <div class="section-head">
+      <h2>关于我</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-card">
+        <h3>做减法，也做细节</h3>
+        <p>
+          我更喜欢“打开就知道怎么用”的软件。界面不必花哨，但每一个按钮、
+          每一句提示都要说得清楚；涉及删除和隐私的地方，宁可保守一点。
+        </p>
+      </div>
+      <div class="about-card">
+        <h3>保持联系</h3>
+        <p>
+          项目问题、使用建议，或者只是想打个招呼，都可以在
+          <a href="https://github.com/huxinxiaoye" target="_blank" rel="noopener">GitHub</a>
+          找到我。你的反馈会直接影响下一个版本。
+        </p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-row">
+    <span>© 2026 刘晋豪 · 独立开发者</span>
+    <div class="footer-links">
+      <a href="diskcleaner.html">磁盘空间分析器</a>
+      <a href="https://github.com/huxinxiaoye" target="_blank" rel="noopener">GitHub ↗</a>
+    </div>
+  </div>
+</footer>
+
 </body>
 </html>
