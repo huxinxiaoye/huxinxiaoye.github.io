@@ -6,7 +6,7 @@
 
 - `index.html`：个人主页与作品列表
 - `diskcleaner.html`：磁盘空间分析器详情、截图与下载页
-- `downloads/DiskCleaner_1.0.0_win64_portable.zip`：Windows 64 位便携版
+- `downloads/DiskCleaner_1.1.0_win64_portable.zip`：Windows 64 位便携版
 - `assets/`：图标、样式和社交分享图
 
 ## 发布
